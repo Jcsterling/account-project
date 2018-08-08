@@ -1,4 +1,4 @@
-package accountApplication;
+package com.qa.accounts.Accounts;
 
 public class AccountClass {
 	
@@ -39,11 +39,6 @@ public class AccountClass {
 		this.accountNumber = accountNumber;
 	}
 	
-	@Override
-	public String toString() {
-		return "AccountClass [firstName=" + firstName + ", lastName=" + lastName + ", accountNumber=" + accountNumber
-				+ "]";
-	}
 
 	
 
