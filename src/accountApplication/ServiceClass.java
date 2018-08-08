@@ -9,18 +9,21 @@ public class ServiceClass {
 	private HashMap<Integer, AccountClass> hmap  = new HashMap<Integer, AccountClass>();
 	private int newID = 0;
 	
-	public void addNewAcc(String firstName, String lastName, int accountNumber) {
-		AccountClass account = new AccountClass(firstName, lastName, accountNumber );
+	public void addNewAcc(String firstName, String lastName, String accountNumber) {
 		
-		
-		hmap.put(newID, account);
+	AccountClass account = new AccountClass(firstName, lastName, accountNumber);
+	
+	hmap.put(newID, account);
 		
 		newID++;
+	}
+		
+	public AccountClass getAnID(int newID) {
+		
+		return this.hmap.get(newID);
 		
 		
 	}
-	
-	
 	
 
 }

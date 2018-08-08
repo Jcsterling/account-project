@@ -6,9 +6,9 @@ public class AccountClass {
 	
 	private String firstName;
 	private String lastName;
-	private int accountNumber;
+	private String accountNumber;
 	
-	public AccountClass(String firstName, String lastName, int accountNumber) {
+	public AccountClass(String firstName, String lastName, String accountNumber) {
 		
 		this.setFirstName(firstName);
 		this.setLastName(lastName);
@@ -31,11 +31,11 @@ public class AccountClass {
 		this.lastName = lastName;
 	}
 
-	public int getAccountNumber() {
+	public String getAccountNumber() {
 		return accountNumber;
 	}
 
-	public void setAccountNumber(int accountNumber) {
+	public void setAccountNumber(String accountNumber) {
 		this.accountNumber = accountNumber;
 	}
 	
