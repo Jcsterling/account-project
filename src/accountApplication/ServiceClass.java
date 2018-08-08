@@ -2,6 +2,9 @@ package accountApplication;
 
 import java.util.HashMap;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 public class ServiceClass {
 	
 	
@@ -14,10 +17,18 @@ public class ServiceClass {
 	AccountClass account = new AccountClass(firstName, lastName, accountNumber);
 	
 	hmap.put(newID, account);
-		
+
 		newID++;
 	}
 		
+	public HashMap<Integer, AccountClass> getHmap() {
+		return hmap;
+	}
+
+	public void setHmap(HashMap<Integer, AccountClass> hmap) {
+		this.hmap = hmap;
+	}
+
 	public AccountClass getAnID(int newID) {
 		
 		return this.hmap.get(newID);
